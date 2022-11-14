@@ -1,0 +1,1 @@
+aws s3api create-bucket --bucket ew12399-hello-bucket --region us-east-1  
