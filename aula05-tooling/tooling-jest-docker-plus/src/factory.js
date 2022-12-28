@@ -14,7 +14,7 @@ if (isOffline) {
     },
   });
 
-  const host = "localhost";
+  const host = process.env.LOCALSTACK_HOST || "localhost";
   s3Config.endpoint = new AWS.Endpoint(`http://${host}:4566`);
 }
 
